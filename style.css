@@ -328,7 +328,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -480,6 +480,7 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+    color: black;
 }
 
 .icon-lg {
@@ -689,6 +690,7 @@ p {
 }
 
 .h1 {
+    color: #FFFFFF;
     font-size: 20px;
     font-family: "Open Sans";
 }
@@ -726,7 +728,7 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: #FFFFFF!important;
 }
 
 h4 {
@@ -739,7 +741,8 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    font-size: 18px;
+    color: #000!important;
 }
 
 .portfolio-thumb {
@@ -778,17 +781,17 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #c79882!important;
+    color: #000!important;
 }
 
 .ltc-white {
