@@ -107,7 +107,9 @@ a:hover {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
-
+.text-center .white {
+    color: #000000;
+}
 .b-parallax {
     background-attachment: fixed;
 }
@@ -303,7 +305,6 @@ a:hover {
 .navbar {
     margin-bottom: 0;
     z-index: 1;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -681,7 +682,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #212121!important;
 }
 
 .container {
@@ -754,7 +755,7 @@ h3 {
 }
 
 h1 {
-    color: #FFFFFF!important;
+    color: #000;
 }
 
 h4 {
@@ -768,9 +769,11 @@ h4 {
 
 .white {
     font-size: 18px;
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
-
+.texte-de-fin {
+    color: black;
+}
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -807,9 +810,8 @@ h4 {
 }
 
 .tc-white {
-    color: #FFFFFF!important;
+    color: #fffde7;
 }
-
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #000!important;
@@ -856,8 +858,26 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
 }
-
+@media (max-width: 1440px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 2560px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 @media (max-width: 1024px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
@@ -875,6 +895,11 @@ h4 {
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .navbar .nav {
         max-width: 80%
     }
