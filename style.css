@@ -41,10 +41,17 @@ a:hover {
     background-size: cover;
     position: relative;
 }
-
+.bloc--flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .bloc-lg {
@@ -92,7 +99,10 @@ a:hover {
     left: 0;
     right: 0;
 }
-
+.black {
+    color: #000;
+    font-size: 1.3333em;
+}
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
@@ -293,6 +303,9 @@ a:hover {
 .navbar {
     margin-bottom: 0;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-brand {
@@ -404,6 +417,18 @@ a:hover {
         float: none;
         margin: 10px auto 0;
     }
+    .coordonnées {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        
+    }
+    .formulaire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .nav > li > .dropdown a {
@@ -441,6 +466,7 @@ nav .caret {
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
+    font-size: 18px;
 }
 
 .mg-lg {
@@ -460,7 +486,7 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
     color: #FFF;
-    background: rgba(0, 0, 0, .3);
+    background: #FFFFFF;
 }
 
 button {
@@ -681,7 +707,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -742,7 +768,7 @@ h4 {
 
 .white {
     font-size: 18px;
-    color: #000!important;
+    color: #FFFFFF!important;
 }
 
 .portfolio-thumb {
@@ -828,7 +854,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -842,6 +868,9 @@ h4 {
     .bloc-tile-4.full-width-bloc .container {
         padding-left: 0;
         padding-right: 0;
+    }
+    .bloc .container {
+        display: block;
     }
 }
 
@@ -896,6 +925,22 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    .navbar-collapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row-no-gutters {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -931,8 +976,6 @@ h4 {
     }
     .nav > li {
         margin-top: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
         text-align: left;
         padding-left: 15px;
         width: 100%;
@@ -968,7 +1011,7 @@ h4 {
         box-shadow: none;
     }
     .navbar-brand img {
-        max-height: 40px;
+        max-height: 50px;
         width: auto;
     }
     .nav-invert .navbar-header {
@@ -1017,7 +1060,7 @@ h4 {
         margin-top: 30px;
     }
     form {
-        padding: 5px;
+        padding: 8px;
     }
     .close-lightbox {
         display: inline-block;
@@ -1031,6 +1074,16 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+    .coordonnées {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;        
+    }
+    .block_liens {
+      display: flex;
+      flex-direction: row;  
     }
 }
 
