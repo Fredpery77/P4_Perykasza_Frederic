@@ -768,8 +768,8 @@ h4 {
 }
 
 .white {
-    font-size: 18px;
-    color: #FFFFFF;
+    font-size: 20px;
+    color: #ececd7!important;
 }
 .texte-de-fin {
     color: black;
@@ -806,11 +806,11 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #97380C;
 }
 
 .tc-white {
-    color: #fffde7;
+    color: #fffde7!important;
 }
 .btn-atomic-tangerine {
     background: #F3976C;
@@ -863,7 +863,7 @@ h4 {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } 
 }
 @media (max-width: 2560px) {
     .navbar {
@@ -875,6 +875,7 @@ h4 {
 @media (max-width: 1024px) {
     .navbar {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -905,6 +906,9 @@ h4 {
     }
     .nav-center.navbar .nav {
         max-width: 100%
+    }
+    .navbar-brand img {
+        margin: 0 95px 0 0;
     }
 }
 
@@ -955,12 +959,12 @@ h4 {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
+    } 
     .navbar-header {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } 
     .row-no-gutters {
         display: flex;
         justify-content: space-around;
