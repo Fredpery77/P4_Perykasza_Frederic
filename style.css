@@ -1,4 +1,5 @@
-body {
+
+    body {
     font-family: "Helvetica Nue", Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
@@ -116,9 +117,6 @@ a:hover {
 
 .d-bloc {
     color: rgba(255, 255, 255, .7);
-}
-.image-resize-mode {
-    width: 35%;
 }
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
