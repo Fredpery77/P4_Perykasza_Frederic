@@ -9,6 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 a,
 button {
   transition: all 0.3s ease-in-out;
@@ -103,6 +104,7 @@ a:hover {
 }
 .d-bloc {
   color: rgba(255, 255, 255, 0.7);
+  text-align: center;
 }
 .d-bloc button:hover {
   color: rgba(255, 255, 255, 0.9);
@@ -375,6 +377,14 @@ a:hover {
       display: flex;
       justify-content: center;
       align-items: center;
+  }
+  .col-sm-6 {
+    flex:none;
+    max-width: none;
+  }
+  .text-center {
+    flex: none;
+    max-width: none;
   }
 }
 .nav > li > .dropdown a {
@@ -694,6 +704,7 @@ h4 {
 }
 .tc-white {
   color: #fffde7 !important;
+  margin: auto;
 }
 .btn-atomic-tangerine {
   background: #f3976c;
@@ -829,7 +840,7 @@ h4 {
 }
 @media (max-width: 767px) {
   .navbar-collapse {
-      display: flex;
+      display: flex!important;
       flex-direction: row;
       justify-content: center;
       align-items: center;
@@ -841,6 +852,7 @@ h4 {
   }
   .row-no-gutters {
       display: flex;
+      flex-wrap: nowrap;
       justify-content: space-around;
       align-items: center;
   }
@@ -985,8 +997,10 @@ h4 {
       margin-top: 40px;
   }
   .block_liens {
-      display: flex;
+      display: flex!;
       flex-direction: row;
+      justify-content: center;
+      align-items: center;
       padding-right: 13px;
   }
 }
