@@ -754,6 +754,20 @@ h4 {
       justify-content: center;
       align-items: center;
   }
+  .block_liens {
+    display: flex!;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 13px;
+}
+.collapse:not(.show) {
+  display: flex;
+}
+.nav > li {
+  padding-left: 15px;
+  padding-right: 20px;
+}
 }
 @media (max-width: 2560px) {
   .navbar {
@@ -764,11 +778,25 @@ h4 {
 }
 @media (max-width: 1024px) {
   .navbar {
-      display: flex;
+      display: flex!important;
       flex-direction: column;
       justify-content: center;
       align-items: center;
   }
+  .block_liens {
+    display: flex!;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 13px;
+}
+.collapse:not(.show) {
+  display: flex;
+}
+.nav > li {
+  padding-left: 15px;
+  padding-right: 20px;
+}
   .bloc {
       padding-left: 20px;
       padding-right: 20px;
@@ -890,10 +918,9 @@ h4 {
       -ms-transform: none;
   }
   .nav > li {
-      margin-top: 0;
       text-align: left;
       padding-left: 15px;
-      width: 100%;
+      padding-right: 20px;
   }
   .nav > li:hover {
       background: rgba(0, 0, 0, 0.08);
