@@ -133,11 +133,7 @@ button[disabled],
 html input[disabled] {
     cursor: default;
 }
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
+
 input {
     line-height: normal;
 }
@@ -146,18 +142,12 @@ input[type="radio"] {
     box-sizing: border-box;
     padding: 0;
 }
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    height: auto;
-}
+
 input[type="search"] {
     box-sizing: content-box;
     appearance: textfield;
 }
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-    appearance: none;
-}
+
 fieldset {
     padding: 0.35em 0.625em 0.75em;
     margin: 0 2px;
@@ -1062,7 +1052,7 @@ th {
 }
 html {
     font-size: 10px;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
 }
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1090,7 +1080,7 @@ a:hover {
 }
 a:focus {
     outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
+    outline: 5px auto;
     outline-offset: -2px;
 }
 figure {
@@ -2519,7 +2509,6 @@ table th[class*="col-"] {
         width: 100%;
         margin-bottom: 15px;
         overflow-y: hidden;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
         border: 1px solid #ddd;
     }
     .table-responsive > .table {
@@ -2606,7 +2595,7 @@ input[type="file"]:focus,
 input[type="checkbox"]:focus,
 input[type="radio"]:focus {
     outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
+    outline: 5px auto;
     outline-offset: -2px;
 }
 output {
@@ -2636,16 +2625,6 @@ output {
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-.form-control::-moz-placeholder {
-    color: #999;
-    opacity: 1;
-}
-.form-control:-ms-input-placeholder {
-    color: #999;
-}
-.form-control::-webkit-input-placeholder {
-    color: #999;
-}
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
@@ -2662,7 +2641,7 @@ textarea.form-control {
 input[type="search"] {
     appearance: none;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
+@media screen and {
     input[type="date"].form-control,
     input[type="time"].form-control,
     input[type="datetime-local"].form-control,
@@ -3066,7 +3045,6 @@ textarea.input-lg {
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    -ms-touch-action: manipulation;
     touch-action: manipulation;
     cursor: pointer;
     user-select: none;
@@ -3081,8 +3059,7 @@ textarea.input-lg {
 .btn:active:focus,
 .btn:focus {
     outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
+    outline: 5px auto;
 }
 .btn.focus,
 .btn:focus,
