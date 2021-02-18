@@ -330,7 +330,7 @@ a:hover {
 }
 @media (min-width: 768px) {
   .site-navigation {
-      margin-top: 20px;
+      margin-top: 50px;
       top: 50%;
       right: 40px;
       transform: translate(0, -50%);
