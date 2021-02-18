@@ -826,7 +826,7 @@ h4 {
       background-attachment: scroll;
   }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
   .b-parallax {
       background-attachment: scroll;
   }
