@@ -830,15 +830,10 @@ body
 }
 	@media (max-width: 2560px)
 {
-/* .navbar
-{
-	display:flex;
-	justify-content:center;
-	align-items:center
-} */
 .navbar-nav
 {
 	flex-direction:row
+
 } 
 .nav > li
 {
@@ -1186,10 +1181,11 @@ body
 }
 	@media only screen and (min-width:2560px) and (max-width:4440px)
 {
-.navbar-nav
+.navbar .nav
 {
 	display:flex;
-	flex-direction:row
+	flex-direction:row;
+    margin-top: 0;
 }
 
 }
